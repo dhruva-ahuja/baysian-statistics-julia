@@ -1,0 +1,5 @@
+{
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "julia.execution.codeInREPL": false,
+    "jupyter.interactiveWindow.creationMode": "perFile"
+}
