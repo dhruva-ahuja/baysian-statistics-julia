@@ -148,3 +148,7 @@ This setup gives you:
 - Easy maintenance
 
 The key difference from Python is that Julia's package manager is more tightly integrated (no need for virtualenv equivalents - projects automatically manage their dependencies).
+
+To install the packages from .toml file please run the following command:
+
+`(YourProjectEnv) pkg> instantiate`
