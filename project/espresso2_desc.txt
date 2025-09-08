@@ -1,0 +1,16 @@
+Dataset: espresso2.csv
+
+Source: P. Masella, L. Guerrini, S. Spinelli, L. Calamai, P. Spugnoli,
+F. Illy, A. Parenti (2015). "A New Espresso Brewing Method," 
+Journal of Food Engineering, Vol. 146, pp. 204-208.
+
+Descrption: Comparison of foam index (Y, in %) for 3 temperatures (75C,85,90)
+and 2 extraction pressures (15bar and 20). 
+9 replicates/treatment.
+Data simulated to match means and SDs
+
+Variables:
+foamIndx
+trt_id
+tempC
+prssBar
