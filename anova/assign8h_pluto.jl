@@ -89,9 +89,24 @@ begin
 	2 * mean_deviance - deviance_at_mean |> println
 end
 
+# ╔═╡ 9f64c298-2cfe-4f1f-a0b6-ffa93d0efdba
+-2*mean(chains.value[var=:loglikelihood, chain=1])
+
+# ╔═╡ f57190a3-e480-4670-989b-f2783491c871
+chains.value[var=:acceptance_rate]
+
+# ╔═╡ 7006e203-f775-4cdc-91a6-d1dd0b6e2905
+chains.value.axes[2] |> println
+
+# ╔═╡ 1b999597-2928-4f08-b8b8-e1efb344ff87
+begin
+	import AxisArrays: levelnames
+end
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+AxisArrays = "39de3d68-74b9-583c-8d2d-e117c070f3a9"
 CategoricalArrays = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
@@ -100,6 +115,7 @@ Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
 
 [compat]
+AxisArrays = "~0.4.7"
 CategoricalArrays = "~0.10.8"
 DataFrames = "~1.7.1"
 Distributions = "~0.25.120"
@@ -113,7 +129,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.11.6"
 manifest_format = "2.0"
-project_hash = "ea047a0173c389dcfced165192e02722dadadc25"
+project_hash = "82dfd9c60099971f89b85f23ce3fb6e02f7d0757"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "60665b326b75db6517939d0e1875850bc4a54368"
@@ -1952,5 +1968,9 @@ version = "17.4.0+2"
 # ╠═2a6ad60d-2a1a-465f-9a4e-31ce1afed0d2
 # ╠═bbde8333-1e37-43e9-b402-32db09b93259
 # ╠═e87b5675-afea-4b98-ae5c-685d1f01bcb1
+# ╠═9f64c298-2cfe-4f1f-a0b6-ffa93d0efdba
+# ╠═f57190a3-e480-4670-989b-f2783491c871
+# ╠═7006e203-f775-4cdc-91a6-d1dd0b6e2905
+# ╠═1b999597-2928-4f08-b8b8-e1efb344ff87
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
